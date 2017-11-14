@@ -28,7 +28,30 @@
 			<ul class="user-nav">
 				<li><a href="#" class="user-nav__search"></a></li>
 				<li><a href="#" class="user-nav__login">Вход</a></li>
-				<li><a href="#" class="user-nav__cart">2 товара</a></li>
+				<li>
+                    <a href="#" class="user-nav__cart">2 товара</a>
+                    <section class="cart">
+                        <h2>Товары корзины</h2>
+                        <table>
+                            <tr>
+                                <td><button aria-label="Удалить" title="Удалить">x</button></td>
+                                <td>Пломбир с апельсиновым джемом</td>
+                                <td>1,5 кг x <span>200 руб.</span></td>
+                                <td>300 руб.</td>
+                            </tr>
+                            <tr>
+                                <td><button aria-label="Удалить" title="Удалить">x</button></td>
+                                <td>Клубничный пломбир с присыпкой из белого шоколада</td>
+                                <td>1,5 кг x <span>300 руб.</span></td>
+                                <td>450 руб.</td>
+                            </tr>
+                        </table>
+                        <p>Итого: 750 руб.</p>
+                        <p>
+                            <a href="#">Оформить заказ</a>
+                        </p>
+                    </section>
+                </li>
 			</ul>
 			<div class="">
 				<p class="">c 10 до 20, ежедневно</p>
@@ -51,7 +74,42 @@
 
             <section class="filter">
                 <h2 class="visually-hidden">Параметры фильтра</h2>
-                <!-- form -->
+                <form action="https://echo.htmlacademy.ru" method="GET">
+                    <ul>
+                        <li>
+                            <h3>Сортировка:</h3>
+                            <select name="order" id="filter-order">
+                                <option value="fame">по популярности</option>
+                            </select>
+                        </li>
+                        <li>
+                            <h3>Цена:</h3>
+                            <input name="price" type="range">
+                        </li>
+                        <li>
+                            <h3>Жирность:</h3>
+                            <ul>
+                                <li><label><input type="radio" name="fat-percent" value="0">0%</label></li>
+                                <li><label><input type="radio" name="fat-percent" value="less10">до 10%</label></li>
+                                <li><label><input type="radio" name="fat-percent" value="less30">до 30%</label></li>
+                                <li><label><input type="radio" name="fat-percent" value="more30">выше 30%</label></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <h3>Наполнители:</h3>
+                            <ul>
+                                <li><label><input type="checkbox" name="chocolate">Шоколадные</label></li>
+                                <li><label><input type="checkbox" name="sugar">Сахарные присыпки</label></li>
+                                <li><label><input type="checkbox" name="fruit">Фрукты</label></li>
+                                <li><label><input type="checkbox" name="syrup">Сиропы</label></li>
+                                <li><label><input type="checkbox" name="jams">Джемы</label></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <button type="submit">Применить</button>
+                        </li>
+                    </ul>
+                </form>
             </section>
 
             <section class="content">
@@ -135,12 +193,12 @@
             <section class="pagination">
                 <h2 class="visually-hidden">разбивка на страницы</h2>
                 <ul>
-                    <li><a href="">1</a></li>
-                    <li><a href="">2</a></li>
-                    <li><a href="">3</a></li>
-                    <li><a href="">4</a></li>
-                    <li><a href="">5</a></li>
-                    <li><a href="">></a></li>
+                    <li><a href="#" aria-label="страница 1">1</a></li>
+                    <li><a href="#" aria-label="страница 2">2</a></li>
+                    <li><a href="#" aria-label="страница 3">3</a></li>
+                    <li><a href="#" aria-label="страница 4">4</a></li>
+                    <li><a href="#" aria-label="страница 5">5</a></li>
+                    <li><a href="#" aria-label="дальше">></a></li>
                 </ul>
             </section>
 		</main>
@@ -174,28 +232,5 @@
 				<li>по жирности</li>
 			</ul>
 		</section>
-
-		<section class="cart">
-            <h2>Товары корзины</h2>
-            <table>
-                <tr>
-                    <td>X</td>
-                    <td>Пломбир с апельсиновым джемом</td>
-                    <td>1,5 кг x <span>200 руб.</span></td>
-                    <td>300 руб.</td>
-                </tr>
-                <tr>
-                    <td>X</td>
-                    <td>Клубничный пломбир с присыпкой из белого шоколада</td>
-                    <td>1,5 кг x <span>300 руб.</span></td>
-                    <td>450 руб.</td>
-                </tr>
-            </table>
-            <p>Итого: 750 руб.</p>
-            <p>
-                <a href="#">Оформить заказ</a>
-            </p>
-		</section>
-
 	</body>
 </html>
