@@ -7,7 +7,7 @@
 	<body>
 		<header class="main-header">
 			<nav class="main-nav">
-				<a>
+				<a href="index.html" aria-label="Главная">
 					<img src="img/Logo.svg" width="154" height="64" alt="GllacyShop">
 				</a>
 				<ul>
@@ -26,7 +26,7 @@
 				</ul>
 			</nav>
 			<ul class="user-nav">
-				<li><a href="#" class="user-nav__search"></a></li>
+				<li><a href="#" class="user-nav__search" aria-label="Поиск"></a></li>
 				<li><a href="#" class="user-nav__login">Вход</a></li>
 				<li><a href="#" class="user-nav__cart">Пусто</a></li>
 			</ul>
@@ -63,9 +63,9 @@
 					</li>
 				</ul>
 				<ul class="slider-control">
-					<li></li>
-					<li></li>
-					<li></li>
+					<li><input type="radio" name="slide" value="1"></li>
+					<li><input type="radio" name="slide" value="2"></li>
+					<li><input type="radio" name="slide" value="3"></li>
 				</ul>
 			</section>
 
@@ -174,29 +174,58 @@
 				</ul>
 			</nav>
 			<div>
-				<a href="#"><img src="img/logo-htmlacademy-small.svg" width="114" height="38" alt="HTML Academy"></a>
+				<a href="#" aria-label="HTML Academy"><img src="img/logo-htmlacademy-small.svg" width="114" height="38" alt="HTML Academy"></a>
 				<p>Сделано в <a href="#">HTML Academy</a> &copy; 2017</p>
 			</div>
 		</footer>
 
 		<section class="login">
 			<h2 class="visually-hidden">Вход в личный кабинет</h2>
-			<!-- form -->
-			<div>
-				<p><a href="#">Забыли пароль?</a></p>
-				<p><a href="#">Новая регистрация</a></p>
-			</div>
+			<form action="https://echo.htmlacademy.ru" method="post">
+				<p>
+					<label for="login-email" class="visually-hidden">Электронная почта</label>
+					<input name="email" id="login-email" type="email" placeholder="Электронная почта">
+				</p>
+				<p>
+					<label for="login-password" class="visually-hidden">Пароль</label>
+					<input name="password" id="login-password" type="password" placeholder="Пароль">
+				</p>
+				<button type="submit">Войти</button>
+				<p>
+					<p><a href="#">Забыли пароль?</a></p>
+					<p><a href="#">Новая регистрация</a></p>
+				</p>
+			</form>
 		</section>
 
 		<section class="search">
 			<h2>Поиск</h2>
-			<!-- form -->
+			<form action="https://echo.htmlacademy.ru" method="GET">
+				<p>
+					<label for="search-text" class="visually-hidden">Что ищем?</label>
+					<input name="text" id="search-text" type="text" placeholder="Что ищем?">
+				</p>
+			</form>
 		</section>
 
 		<section class="feedback">
 			<h2 class="visually-hidden">Обратная связь</h2>
 			<p>Мы обязательно вам ответим!</p>
-			<!-- form -->
+			<form action="https://echo.htmlacademy.ru">
+				<p>
+					<label for="feedback-name" class="visually-hidden">Как вас зовут?</label>
+					<input name="name" id="feedback-name" type="text" placeholder="Как вас зовут?">
+				</p>
+				<p>
+					<label for="feedback-email" class="visually-hidden">Ваша почта для ответа?</label>
+					<input name="email" id="feedback-email" type="email" placeholder="Ваша почта для ответа?">
+				</p>
+				<p>
+					<label for="feedback-text" class="visually-hidden">Текст сообщения</label>
+					<textarea name="text" id="feedback-text" placeholder="Напишите что-нибудь..."></textarea>
+				</p>
+				<button type="submit">Отправить</button>
+			</form>
 		</section>
 	</body>
 </html>
