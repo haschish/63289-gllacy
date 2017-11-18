@@ -1,0 +1,326 @@
+body {
+	margin: 0px;
+	padding: 0px;
+	outline: none;
+
+	font-family: 'Roboto', sans-serif;
+	font-size: 	16px;
+	font-weight: 400;
+	line-height: 22px;
+	color: #fff;
+
+	background-color: #849d8f;
+	background-image: url("../img/iceCream1.png");
+	background-position: top center;
+	background-repeat: no-repeat;
+}
+
+a {
+	text-decoration: none;
+	color: #fff;
+	outline: none;
+}
+a:hover,
+a:focus {
+	color: #ffbc9e;
+}
+
+input {
+	font: inherit;
+	font-size: 14px;
+	font-weight: 700;
+	line-height: 24px;
+	padding: 9px 15px;
+	border: 1px solid #d3d3d2;
+	border-radius: 5px;
+	outline: none;
+}
+input:hover {
+	border: 2px solid #9a9a9a;
+	padding: 8px 14px;
+}
+input:focus {
+	border: 2px solid #2e88e4;
+	padding: 8px 14px;
+}
+input::placeholder {
+	font-weight: 400;
+}
+
+.red-button {
+	font-size: 18px;
+	font-weight: 700;
+	line-height: 24px;
+	padding: 10px 20px;
+	border-radius: 22px;
+	color: white;
+	border: 0;
+	background-color: #e74a35;
+    background: linear-gradient(to top, #e74a35, #f26843);
+	box-shadow: 0 1px 2px 0 rgba(172, 16, 0, 64);
+}
+
+.site-navigation {
+	font-size: 16px;
+	font-weight: 700;
+	line-height: 18px;
+	list-style: none;
+}
+.site-navigation .active {
+	background-color: #d07058;
+}
+.site-navigation > li > a {
+	border: 0px solid rgba(255,255,255,0.2);
+	border-bottom-width: 1px;
+	padding: 0px 16px;
+}
+.site-navigation > li > a:hover,
+.site-navigation > li > a:focus {
+	color: #333;
+	background-color: #fff;
+	border-radius: 16px;
+	padding: 7px 16px;
+}
+.site-navigation > li > a:active {
+	box-shadow: inset 0 2px 0 0px #696969;
+}
+
+.sub-menu {
+	list-style: none;
+	display: table;
+	border-radius: 5px;
+	background-color: #fff;
+	font-size: 14px;
+	font-weight: 400;
+	line-height: 28px;
+	padding: 0;
+}
+.sub-menu a {
+	padding: 0 10px;
+	color: #333;
+	display: block;
+	border-radius: 0px;
+}
+.sub-menu a:hover,
+.sub-menu a:focus {
+	background-color: #fbded7;
+	border-radius: 0px;
+}
+.sub-menu a:active {
+	background-color: #f6b5a5;
+}
+.sub-menu hr {
+	margin: 0;
+	padding: 0;
+}
+
+.user-navigation {
+	list-style: none;
+	font-size: 14px;
+	line-height: 16px;
+	font-weight: 500;
+}
+.user-navigation > li > a {
+	background-color: rgba(255, 255, 255, 0.2);
+	border-radius: 16px;
+	padding: 8px 16px;
+}
+
+.user-navigation > li > a:hover,
+.user-navigation a:focus {
+	color: black;
+	background-color: rgba(255, 255, 255, 1);
+}
+
+.user-login {
+	font-size: 13px;
+	font-weight: 400;
+	line-height: 24px;
+	background-color: #f8f7f4;
+	color: #323232;
+}
+.user-login a {
+	text-decoration: underline;
+	color: #323232;
+}
+
+.main-header .shedule {
+	font-size: 14px;
+	font-weight: 700;
+	line-height: 16px;
+}
+.main-header .phone {
+	font-size: 22px;
+	font-weight: 700;
+	line-height: 24px;
+}
+
+.slider-content {
+	list-style: none;
+}
+.slider-content h3 {
+	font-size: 60px;
+	font-weight: 700;
+	line-height: 60px;
+}
+.slider-content .red-button {
+	font-size: 32px;
+	font-weight: 700;
+	line-height: 44px;
+	padding: 16px 32px;
+	border-radius: 32px;
+	box-shadow: 0 2px 2px 0 rgba(172, 16, 0, 64);
+}
+
+.slider-control {
+	list-style: none;
+}
+
+.special-offers {
+	font-weight: 700;
+}
+.special-offers ul {
+	list-style: none;
+}
+.special-offers h3 {
+	font-size: 35px;
+	line-height: 41px;
+}
+.special-offers p {
+	font-size: 18px;
+	line-height: 22px;
+}
+.special-offers .red-button {
+	font-size: 18px;
+	line-height: 24px;
+	padding: 18px 32px;
+	border-radius: 24px;
+}
+.special-offers__jam {
+	background-color: #9a1e39;
+	background-image: url("../img/raspberryBackground.jpg");
+	background-repeat: no-repeat;
+	border-radius: 15px;
+}
+.special-offers__chocolate {
+	background-color: #462b1f;
+	background-image: url("../img/chocolateBackground.jpg");
+	background-repeat: no-repeat;
+	border-radius: 15px;
+}
+
+.hits ul {
+	list-style: none;
+}
+.hits img {
+	border-radius: 50%;
+}
+.hits h3 {
+	font-size: 16px;
+	font-weight: 500;
+	line-height: 22px;
+}
+.hits p {
+	font-size: 45px;
+	font-weight: 700;
+	line-height: 45px;
+}
+.hits p span {
+	font-size: 30px;
+}
+
+.features {
+	background-color: #eee2c7;
+	background-image: url("../img/waferBackground.jpg");
+	border-radius: 15px;
+	color: #323232;
+}
+.features b {
+	font-size: 24px;
+	font-weight: 500;
+	line-height: 30px;
+}
+.features-list {
+	list-style: none;
+	font-size: 16px;
+	font-weight: 400;
+	line-height: 22px;
+}
+
+.new-in-the-blog {
+	color: #323232;
+	background-color: white;
+	background-image: url("../img/strawberryBackground.jpg");
+	background-repeat: no-repeat;
+	border-radius: 15px;
+}
+.new-in-the-blog h2 {
+	font-size: 16px;
+	font-weight: 500;
+	line-height: 22px;
+}
+.new-in-the-blog a {
+	color: #323232;
+	text-decoration: underline;
+	font-size: 24px;
+	font-weight: 700;
+	line-height: 30px;
+}
+
+.mailing {
+	font-size: 16px;
+	font-weight: 400;
+	line-height: 22px;
+	color: #5a5a5a;
+	background-color: #f8f7f4;
+}
+
+.contacts {
+	color: #323232;
+	background-color: white;
+	font-size: 14px;
+	font-weight: 400;
+	line-height: 20px;
+}
+.contacts ul {
+	list-style: none;
+}
+.contacts h3 {
+	font-size: 14px;
+	font-weight: 400;
+	line-height: 20px;
+}
+.contacts b {
+	font-size: 18px;
+	font-weight: 700;
+	line-height: 24px;
+}
+
+.main-footer {
+	color: white;
+	font-size: 12px;
+	font-weight: 400;
+	line-height: 18px;
+}
+.main-footer ul {
+	list-style: none;
+}
+.main-footer a {
+	color: white;
+	font-size: 13px;
+	border: 0px solid rgba(255,255,255,0.2);
+	border-bottom-width: 1px;
+}
+.main-footer strong {
+	font-weight: 700;
+}
+
+.feedback {
+	background-color: #f8f7f4;
+	color: #323232;
+}
+.feedback .title {
+	font-size: 24px;
+	font-weight: 500;
+	line-height: 28px;
+}

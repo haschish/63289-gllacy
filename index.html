@@ -3,6 +3,10 @@
 	<head>
 		<meta charset="utf-8">
 		<title>HTML Academy: Глейси</title>
+		<link rel="stylesheet" href="css/normalize.css">
+		<link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&amp;subset=cyrillic" rel="stylesheet">
+
+		<link rel="stylesheet" href="css/style.css">
 	</head>
 	<body>
 		<header class="main-header">
@@ -10,11 +14,12 @@
 				<a href="index.html" aria-label="Главная">
 					<img src="img/Logo.svg" width="154" height="64" alt="GllacyShop">
 				</a>
-				<ul>
+				<ul class="site-navigation">
 					<li>
 						<a href="catalog.html">Каталог</a>
-						<ul>
+						<ul class="sub-menu">
 							<li><a href="#">Новинки</a></li>
+							<li><hr></li>
 							<li><a href="#">Сливочное</a></li>
 							<li><a href="#">Щербеты</a></li>
 							<li><a href="#">Фруктовый лед</a></li>
@@ -25,7 +30,7 @@
 					<li><a href="about.html">О Компании</a></li>
 				</ul>
 			</nav>
-			<ul class="user-nav">
+			<ul class="user-navigation">
 				<li>
 					<a href="#" class="user-nav__search"><span class="visually-hidden">Поиск</span></a>
 					<form action="https://echo.htmlacademy.ru" method="GET">
@@ -37,27 +42,29 @@
 				</li>
 				<li>
 					<a href="#" class="user-nav__login">Вход</a>
-					<form action="https://echo.htmlacademy.ru" method="post">
-						<p>
-							<label for="login-email" class="visually-hidden">Электронная почта</label>
-							<input name="email" id="login-email" type="email" placeholder="Электронная почта">
-						</p>
-						<p>
-							<label for="login-password" class="visually-hidden">Пароль</label>
-							<input name="password" id="login-password" type="password" placeholder="Пароль">
-						</p>
-						<button type="submit">Войти</button>
-						<div>
-							<p><a href="#">Забыли пароль?</a></p>
-							<p><a href="#">Новая регистрация</a></p>
-						</div>
-					</form>
+					<section class="user-login">
+						<form action="https://echo.htmlacademy.ru" method="post">
+							<p>
+								<label for="login-email" class="visually-hidden">Электронная почта</label>
+								<input name="email" id="login-email" type="email" placeholder="Электронная почта">
+							</p>
+							<p>
+								<label for="login-password" class="visually-hidden">Пароль</label>
+								<input name="password" id="login-password" type="password" placeholder="Пароль">
+							</p>
+							<button type="submit" class="red-button">Войти</button>
+							<div>
+								<p><a href="#">Забыли пароль?</a></p>
+								<p><a href="#">Новая регистрация</a></p>
+							</div>
+						</form>
+					</section>
 				</li>
 				<li><a href="#" class="user-nav__cart">Пусто</a></li>
 			</ul>
-			<div class="">
-				<p class="">c 10 до 20, ежедневно</p>
-				<p class="">8 812 450-25-25</p>
+			<div>
+				<p class="shedule">c 10 до 20, ежедневно</p>
+				<p class="phone">8 812 450-25-25</p>
 			</div>
 		</header>
 		<main>
@@ -70,21 +77,21 @@
 							Крем-брюле и пломбир<br>
 							с малиновым джемом
 						</h3>
-						<a href="#">Давайте оба!</a>
+						<a href="#" class="red-button">Давайте оба!</a>
 					</li>
 					<li class="">
 						<h3>
 							Шоколадный пломбир<br>
 							и лимонный сорбет
 						</h3>
-						<a href="#">Давайте оба!</a>
+						<a href="#" class="red-button">Давайте оба!</a>
 					</li>
 					<li class="">
 						<h3>
 							Пломбир с помадкой<br>
 							и клубничный щербет
 						</h3>
-						<a href="#">Давайте оба!</a>
+						<a href="#" class="red-button">Давайте оба!</a>
 					</li>
 				</ul>
 				<ul class="slider-control">
@@ -100,12 +107,12 @@
 					<li class="special-offers__jam">
 						<h3>Малинка даром!</h3>
 						<p>При покупке 2 кг любого фруктового мороженого, добавим в ваш заказ банку малинового варенья бесплатно.</p>
-						<a href="#">Хочу варенье!</a>
+						<a href="#" class="red-button">Хочу варенье!</a>
 					</li>
 					<li class="special-offers__chocolate">
 						<h3>Шоколадки даром!</h3>
 						<p>При покупке 2 кг пломбира, добавим в ваш заказ упаковку вкуснейшей шоколадной присыпки совершенно бесплатно.</p>
-						<a href="#">Хочу шоколадки!</a>
+						<a href="#" class="red-button">Хочу шоколадки!</a>
 					</li>
 				</ul>
 			</section>
@@ -149,24 +156,28 @@
 				</ul>
 			</section>
 
-			<section class="new-in-the-blog">
-				<h2>Новое в нашем блоге</h2>
-				<a href="#">10 способов сервировки фруктовый щербетов к столу</a>
-			</section>
+			<div>
+				<section class="new-in-the-blog">
+					<h2>Новое в нашем блоге</h2>
+					<a href="#">10 способов сервировки фруктовый щербетов к столу</a>
+				</section>
 
-			<section class="mailing">
-				<h2 class="visually-hidden">Почтовая рассылка</h2>
-				<p>
-					Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой ненужной ерудны. Честно =)
-				</p>
-				<form action="https://echo.htmlacademy.ru" method="post">
+				<section class="mailing">
+					<h2 class="visually-hidden">Почтовая рассылка</h2>
 					<p>
-						<label for="mailing-email" class="visually-hidden">Электронная почта</label>
-						<input name="email" id="mailing-email" type="email" placeholder="Электронная почта">
-						<button type="submit">Отправить</button>
+						Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой ненужной ерудны. Честно =)
 					</p>
-				</form>
-			</section>
+					<form action="https://echo.htmlacademy.ru" method="post">
+						<p>
+							<label for="mailing-email" class="visually-hidden">Электронная почта</label>
+							<input name="email" id="mailing-email" type="email" placeholder="Электронная почта">
+							<button type="submit" class="red-button">Отправить</button>
+						</p>
+					</form>
+				</section>
+			</div>
+
+
 
 			<section class="contacts">
 				<h2 class="visually-hidden">Контакты</h2>
@@ -186,7 +197,7 @@
 						(с 10 до 20 ежедневно)
 					</li>
 				</ul>
-				<a href="#">Форма обратной связи</a>
+				<a href="#" class="red-button">Форма обратной связи</a>
 			</section>
 		</main>
 		<footer class="main-footer">
@@ -198,7 +209,7 @@
 			</ul>
 			<nav class="footer-nav">
 				<ul>
-					<li><a href="#">Для поставщиков</a></li>
+					<li><a href="#"><strong>Для поставщиков</strong></a></li>
 					<li><a href="#">О производстве</a></li>
 					<li><a href="#">Наши документы</a></li>
 					<li><a href="#">Экологические стандарты</a></li>
@@ -212,7 +223,7 @@
 
 		<section class="feedback">
 			<h2 class="visually-hidden">Обратная связь</h2>
-			<p>Мы обязательно вам ответим!</p>
+			<p class="title">Мы обязательно вам ответим!</p>
 			<form action="https://echo.htmlacademy.ru">
 				<p>
 					<label for="feedback-name" class="visually-hidden">Как вас зовут?</label>
@@ -226,7 +237,7 @@
 					<label for="feedback-text" class="visually-hidden">Текст сообщения</label>
 					<textarea name="text" id="feedback-text" placeholder="Напишите что-нибудь..."></textarea>
 				</p>
-				<button type="submit">Отправить</button>
+				<button type="submit" class="red-button">Отправить</button>
 			</form>
 		</section>
 	</body>
