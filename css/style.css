@@ -452,6 +452,7 @@ textarea::placeholder {
 	list-style: none;
 }
 .pagination a {
+	border: none;
 }
 .pagination__arrow {
 }
