@@ -156,18 +156,22 @@ textarea::placeholder {
 
 .user-navigation {
 	list-style: none;
+}
+.user-navigation__link {
 	font-size: 14px;
 	line-height: 16px;
 	font-weight: 500;
-}
-.user-navigation > li > a {
 	background-color: rgba(255, 255, 255, 0.2);
 	border-radius: 16px;
 	padding: 8px 16px;
 }
 
-.user-navigation > li > a:hover,
-.user-navigation a:focus {
+.user-navigation__link:hover,
+.user-navigation__link:focus {
+	color: black;
+	background-color: rgba(255, 255, 255, 1);
+}
+.user-navigation__link_icon_cart {
 	color: black;
 	background-color: rgba(255, 255, 255, 1);
 }
@@ -339,13 +343,13 @@ textarea::placeholder {
 	list-style: none;
 }
 .main-footer a {
-	color: white;
 	font-size: 13px;
-	border: 0px solid rgba(255,255,255,0.2);
-	border-bottom-width: 1px;
 }
 .main-footer strong {
 	font-weight: 700;
+}
+.main-footer__logo-htmlacademy {
+	border: none;
 }
 
 .feedback {
@@ -426,25 +430,52 @@ textarea::placeholder {
 	box-shadow: inset 0 2px 0 #696969;
 }
 
-.ice-cream-list ul {
+.cart {
+	background-color: #f8f7f4;
+	font-size: 13px;
+	font-weight: 400;
+	line-height: 16px;
+	color: #323232;
+	border-radius: 5px;
+}
+.cart button {
+	border: none;
+	background: none;
+}
+.cart__sum {
+	font-size: 15px;
+	font-weight: 700;
+	line-height: 18px;
+}
+
+.pagination ul {
 	list-style: none;
 }
-.ice-cream-list li:hover {
-	background-color: rgba(255, 255, 255, 0.2);
+.pagination a {
 }
-.ice-cream-list img {
-	border-radius: 50%;
+.pagination__arrow {
 }
-.ice-cream-list h3 {
+.pagination__arrow_disabled {
+}
+.pagination__page {
+	display: inline-block;
+	width: 25px;
+	text-align: center;
 	font-size: 16px;
 	font-weight: 500;
-	line-height: 22px;
+	line-height: 25px;
+	color: white;
+	border-radius: 50%;
+	background-color: transparent;
 }
-.ice-cream-list p {
-	font-size: 45px;
-	font-weight: 700;
-	line-height: 45px;
+.pagination__page:hover,
+.pagination__page:focus {
+	background-color: rgba(255, 255, 255, 0.2);
+	color: white;
 }
-.ice-cream-list span {
-	font-size: 30px;
+.pagination__page_active,
+.pagination__page_active:hover,
+.pagination__page_active:focus {
+	background-color: white;
+	color: #323232;
 }
