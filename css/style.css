@@ -16,7 +16,6 @@ body {
 
 	/*background-image: url("../preview/gllacy-index-1200.jpg");*/
 	/*background-image: url("../preview/gllacy-catalog-1200.jpg");*/
-	height: 2500px;
 }
 
 a {
@@ -646,7 +645,6 @@ textarea::placeholder {
 	padding: 0;
 	margin: 0;
 	display: flex;
-	position: absolute;
 	margin-top: -20px;
 }
 
