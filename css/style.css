@@ -10,12 +10,13 @@ body {
 	color: #fff;
 
 	background-color: #849d8f;
-	background-image: url("../img/iceCream1.png");
+	/*background-image: url("../img/iceCream1.png");*/
 	background-position: top center;
 	background-repeat: no-repeat;
 
 	/*background-image: url("../preview/gllacy-index-1200.jpg");*/
-	/*height: 2500px;*/
+	/*background-image: url("../preview/gllacy-catalog-1200.jpg");*/
+	height: 2500px;
 }
 
 a {
@@ -568,10 +569,10 @@ textarea::placeholder {
 }
 
 .hits {
-	margin-top: 40px;
+	
 }
 .ice-cream-list {
-
+	margin-top: 40px;
 }
 .ice-cream-list ul {
 	padding: 0;
@@ -585,7 +586,7 @@ textarea::placeholder {
 }
 .ice-cream-list__item p {
 	position: absolute;
-	bottom: 20px;
+	top: 163px;
 }
 .ice-cream-list__item h3 {
 	text-align: center;
@@ -631,8 +632,50 @@ textarea::placeholder {
 }
 
 .main-footer {
-	margin-top: 18px;
+	border-top: 1px solid #a9bbb1;
+	height: 108px;
 	display: flex;
 	justify-content: space-between;
-/*	background-color: rgba(255, 255, 255, 0.2);*/
+	align-items: center;
+}
+
+.breadcrums {
+	
+}
+.breadcrums ul {
+	padding: 0;
+	margin: 0;
+	display: flex;
+	position: absolute;
+	margin-top: -20px;
+}
+
+.catalog-title {
+	font-size: 35px;
+	font-weight: 700;
+	line-height: 41px;
+	margin: 0;
+}
+
+.filter {
+	/*background-color: rgba(255, 255, 255, 0.2);*/
+	margin-top: 30px;
+}
+.filter form {
+	display: flex;
+	flex-wrap: wrap;
+	align-content: stretch;
+	align-items: flex-end;
+	height: 140px;
+}
+
+.pagination {
+	margin: 40px 0;
+	text-align: right;
+}
+.pagination ul {
+	padding: 0;
+	margin: 0;
+	display: flex;
+	justify-content: flex-end;
 }
