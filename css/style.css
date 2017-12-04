@@ -540,7 +540,7 @@ textarea::placeholder {
 
 
 .features {
-	/*margin-top: 38px;*/
+	margin-top: -18px;
 	/*height: 260px;*/
 	padding: 20px;
 	padding-bottom: 24px;
@@ -721,13 +721,13 @@ textarea::placeholder {
 	padding: 0;
 }
 .contacts__inner li {
-	margin: 15px 0;
+	margin: 17px 0 15px;
 }
 .contacts__inner h3 {
 	font-size: 14px;
 	font-weight: 400;
 	line-height: 20px;
-	margin: 5px 0;
+	margin: 5px 0 3px;
 }
 .contacts__inner b {
 	font-size: 18px;
