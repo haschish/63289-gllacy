@@ -12,12 +12,12 @@
 			<header class="main-header">
 				<div class="main-header__navigations">
 					<nav class="site-navigation">
-						<a>
+						<a href="index.html" aria-label="Главная">
 							<img src="img/Logo.svg" width="154" height="64" alt="GllacyShop">
 						</a>
 						<ul class="site-navigation-list">
 							<li class="site-navigation-list__item">
-								<a href="catalog.html" class="active">Каталог</a>
+								<a href="#" class="active">Каталог</a>
 								<ul class="sub-menu">
 									<li class="sub-menu__item"><a href="#">Новинки</a></li>
 									<li class="sub-menu__item"><hr></li>
@@ -32,20 +32,20 @@
 						</ul>
 					</nav>
 					<ul class="user-navigation">
-						<li>
-							<a href="#" class="user-navigation__link user-navigation__link_icon_search">
+						<li class="user-navigation__item user-navigation__item_search">
+							<a href="#">
 								<span class="visually-hidden">Поиск</span>
 							</a>
-							<form action="https://echo.htmlacademy.ru" method="GET">
+							<form class="search-form hidden-block" action="https://echo.htmlacademy.ru" method="GET">
 								<p>
 									<label for="search-text" class="visually-hidden">Что ищем?</label>
 									<input name="text" id="search-text" type="text" placeholder="Что ищем?">
 								</p>
 							</form>
 						</li>
-						<li>
-							<a href="#" class="user-navigation__link user-navigation__link_icon_login">Вход</a>
-							<section class="user-login" hidden>
+						<li class="user-navigation__item user-navigation__item_login">
+							<a href="#">Вход</a>
+							<section class="user-login hidden-block">
 								<form action="https://echo.htmlacademy.ru" method="post">
 									<p>
 										<label for="login-email" class="visually-hidden">Электронная почта</label>
@@ -55,27 +55,31 @@
 										<label for="login-password" class="visually-hidden">Пароль</label>
 										<input name="password" id="login-password" type="password" placeholder="Пароль">
 									</p>
-									<button type="submit" class="red-btn">Войти</button>
-									<div>
-										<p><a href="#">Забыли пароль?</a></p>
-										<p><a href="#">Новая регистрация</a></p>
+									<div class="user-login_footer">
+										<button type="submit" class="red-btn">Войти</button>
+										<div>
+											<p><a href="#">Забыли пароль?</a></p>
+											<p><a href="#">Новая регистрация</a></p>
+										</div>
 									</div>
 								</form>
 							</section>
 						</li>
-						<li>
-							<a href="#" class="user-navigation__link user-navigation__link_icon_cart">2 товара</a>
-							<section class="cart" hidden>
+						<li class="user-navigation__item user-navigation__item_cart">
+							<a href="#">2 товара</a>
+							<section class="cart hidden-block">
 								<h2 class="visually-hidden">Товары корзины</h2>
 								<table>
 									<tr>
-										<td><button aria-label="Удалить" title="Удалить">x</button></td>
+										<td><button aria-label="Удалить" title="Удалить" class="btn-close"></button></td>
+										<td><img src="img/1-cart.jpg" width="33" height="33"></td>
 										<td>Пломбир с апельсиновым джемом</td>
 										<td>1,5 кг x <span>200 руб.</span></td>
 										<td>300 руб.</td>
 									</tr>
 									<tr>
-										<td><button aria-label="Удалить" title="Удалить">x</button></td>
+										<td><button aria-label="Удалить" title="Удалить" class="btn-close"></button></td>
+										<td><img src="img/2-cart.jpg" width="33" height="33"></td>
 										<td>Клубничный пломбир с присыпкой из белого шоколада</td>
 										<td>1,5 кг x <span>300 руб.</span></td>
 										<td>450 руб.</td>
@@ -100,7 +104,7 @@
 				<section class="breadcrums">
 					<h2 class="visually-hidden">Хлебные крошки</h2>
 					<ul>
-						<li><a href="#">Главная</a></li>
+						<li><a href="index.html">Главная</a></li>
 						<li><a href="#">Каталог</a></li>
 						<li>Сливочное</li>
 					</ul>
@@ -321,8 +325,8 @@
 					</ul>
 				</nav>
 				<div class="made-by">
-					<a href="#" aria-label="HTML Academy" class="main-footer__logo-htmlacademy"><img src="img/logo-htmlacademy-small.svg" width="114" height="38" alt="HTML Academy"></a>
-					<p>Сделано в <a href="#">HTML Academy</a> &copy; 2017</p>
+					<a href="https://htmlacademy.ru/intensive/htmlcss" aria-label="HTML Academy" class="main-footer__logo-htmlacademy"><img src="img/logo-htmlacademy-small.svg" width="114" height="38" alt="HTML Academy"></a>
+					<p>Сделано в <a href="https://htmlacademy.ru/intensive/htmlcss">HTML Academy</a> &copy; 2017</p>
 				</div>
 			</footer>
 		</div>
