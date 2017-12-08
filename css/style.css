@@ -32,7 +32,7 @@ textarea {
 	box-sizing: border-box;
 	font: inherit;
 	font-size: 16px;
-	font-weight: 400;
+	font-weight: 700;
 	line-height: 24px;
 	padding: 9px 15px;
 	border: 1px solid #d3d3d2;
@@ -232,8 +232,12 @@ textarea::placeholder {
 	margin: 0;
 	padding: 0;
 }
-.sub-menu__item_border_bottom {
-	border-bottom: 1px solid #d1d0ce;
+.sub-menu__item_border_bottom::after {
+	content: "";
+	display: block;
+	background-color: #d1d0ce;
+	height: 1px;
+	margin: 0 8px;
 }
 
 
@@ -505,6 +509,7 @@ textarea::placeholder {
 .feedback_inner textarea {
 	width: 100%;
 	height: 154px;
+	resize: none;
 }
 .feedback_inner .red-btn {
 	float: right;
