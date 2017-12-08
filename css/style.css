@@ -890,7 +890,9 @@ textarea::placeholder {
 .contacts iframe {
 	position: absolute;
 	top: 0px;
+	width: 100%;
 	z-index: 2;
+	border-width: 0;
 }
 .contacts > p {
 	position: absolute;

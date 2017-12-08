@@ -5,7 +5,7 @@
 		<title>HTML Academy: Глейси</title>
 		<link rel="stylesheet" href="css/normalize.css">
 		<link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&amp;subset=cyrillic" rel="stylesheet">
-		<link rel="stylesheet" href="css/style.css">
+		<link rel="stylesheet" href="css/style.min.css">
 	</head>
 	<body>
 		<div class="content">
@@ -44,25 +44,23 @@
 						</li>
 						<li class="user-navigation__item user-navigation__item_login">
 							<a href="#">Вход</a>
-							<section class="user-login hidden-block">
-								<form action="https://echo.htmlacademy.ru" method="post">
-									<p>
-										<label for="login-email" class="visually-hidden">Электронная почта</label>
-										<input name="email" id="login-email" type="email" placeholder="Электронная почта">
-									</p>
-									<p>
-										<label for="login-password" class="visually-hidden">Пароль</label>
-										<input name="password" id="login-password" type="password" placeholder="Пароль">
-									</p>
-									<div class="user-login_footer">
-										<button type="submit" class="red-btn">Войти</button>
-										<div>
-											<p><a href="#">Забыли пароль?</a></p>
-											<p><a href="#">Новая регистрация</a></p>
-										</div>
+							<form class="user-login hidden-block" action="https://echo.htmlacademy.ru" method="post">
+								<p>
+									<label for="login-email" class="visually-hidden">Электронная почта</label>
+									<input name="email" id="login-email" type="email" placeholder="Электронная почта">
+								</p>
+								<p>
+									<label for="login-password" class="visually-hidden">Пароль</label>
+									<input name="password" id="login-password" type="password" placeholder="Пароль">
+								</p>
+								<div class="user-login_footer">
+									<button type="submit" class="red-btn">Войти</button>
+									<div>
+										<p><a href="#">Забыли пароль?</a></p>
+										<p><a href="#">Новая регистрация</a></p>
 									</div>
-								</form>
-							</section>
+								</div>
+							</form>
 						</li>
 						<li class="user-navigation__item user-navigation__item_cart">
 							<a href="#">2 товара</a>
@@ -71,14 +69,14 @@
 								<table>
 									<tr>
 										<td><button aria-label="Удалить" title="Удалить" class="btn-close"></button></td>
-										<td><img src="img/1-cart.jpg" width="33" height="33"></td>
+										<td><img src="img/1-cart.jpg" width="33" height="33" alt=""></td>
 										<td>Пломбир с апельсиновым джемом</td>
 										<td>1,5 кг x <span>200 руб.</span></td>
 										<td>300 руб.</td>
 									</tr>
 									<tr>
 										<td><button aria-label="Удалить" title="Удалить" class="btn-close"></button></td>
-										<td><img src="img/2-cart.jpg" width="33" height="33"></td>
+										<td><img src="img/2-cart.jpg" width="33" height="33" alt=""></td>
 										<td>Клубничный пломбир с присыпкой из белого шоколада</td>
 										<td>1,5 кг x <span>300 руб.</span></td>
 										<td>450 руб.</td>
