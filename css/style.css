@@ -578,6 +578,9 @@ textarea::placeholder {
 	border-radius: 50%;
 	cursor: pointer;
 }
+.slider-control label:hover {
+	background-color: rgba(255, 255, 255, 0.4);
+}
 .slide {
 	display: none;
 }
@@ -987,7 +990,7 @@ textarea::placeholder {
 	background-image: url("../img/twitter.svg");
 }
 .social-buttons__inst {
-	background-image: url("../img/'=].svg");
+	background-image: url("../img/instagram.svg");
 }
 .social-buttons__fb {
 	background-image: url("../img/fb.svg");
@@ -1121,7 +1124,6 @@ textarea::placeholder {
 }
 .filter select:hover,
 .filter select:focus {
-	background-color: white;
 	background-image: url("../img/arrowDownBlack.svg");
 	color: #323232;
 }
@@ -1145,6 +1147,7 @@ textarea::placeholder {
 .filter button:focus {
 	color: #323232;
 	border: none;
+	padding: 0 30px;
 	background-color: white;
 }
 .filter button:active {
