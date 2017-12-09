@@ -68,7 +68,7 @@ textarea::placeholder {
 .site-wrapper {
   min-width: 940px;
   background-color: #849d8f;
-  background-image: url("../img/iceCream1.png");
+  background-image: url("../img/ice-cream-1.png");
   background-repeat: no-repeat;
   background-position: top center;  
   transition: background-image 0.5s ease, background-color 0.5s ease;
@@ -80,11 +80,11 @@ textarea::placeholder {
 }
 
 .site-wrapper::before {
-  background-image: url("../img/iceCream2.png");
+  background-image: url("../img/ice-cream-2.png");
 }
 
 .site-wrapper::after {
-  background-image: url("../img/iceCream3.png");
+  background-image: url("../img/ice-cream-3.png");
 }
 
 .red-btn {
@@ -294,20 +294,20 @@ textarea::placeholder {
 	padding: 0;
 }
 .user-navigation__item_search > a::before {
-	background-image: url("../img/magnifierWhite.png");
+	background-image: url("../img/magnifier-white.png");
 }
 .user-navigation__item_search > a:focus::before,
 .user-navigation__item_search:hover a::before {
-	background-image: url("../img/magnifierBlack.png");
+	background-image: url("../img/magnifier-black.png");
 }
 
 .user-navigation__item_login > a::before {
 	margin-right: 5px;
-	background-image: url("../img/loginWhite.png");
+	background-image: url("../img/login-white.png");
 }
 .user-navigation__item_login > a:focus::before,
 .user-navigation__item_login:hover a::before{
-	background-image: url("../img/loginBlack.png");
+	background-image: url("../img/login-black.png");
 }
 
 .user-navigation__item_cart > a {
@@ -586,17 +586,17 @@ textarea::placeholder {
 }
 #product-1:checked ~ .site-wrapper {
   background-color: #849d8f;
-  background-image: url("../img/iceCream1.png");
+  background-image: url("../img/ice-cream-1.png");
 }
 
 #product-2:checked ~ .site-wrapper {
   background-color: #8996a6;
-  background-image: url("../img/iceCream2.png");
+  background-image: url("../img/ice-cream-2.png");
 }
 
 #product-3:checked ~ .site-wrapper {
   background-color: #9d8b84;
-  background-image: url("../img/iceCream3.png");
+  background-image: url("../img/ice-cream-3.png");
 }
 #product-1:checked ~ .site-wrapper #slide1,
 #product-2:checked ~ .site-wrapper #slide2,
@@ -646,13 +646,13 @@ textarea::placeholder {
 }
 .special-offers__jam {
 	background-color: #9a1e39;
-	background-image: url("../img/raspberryBackground.jpg");
+	background-image: url("../img/raspberry-background.jpg");
 	background-repeat: no-repeat;
 	border-radius: 15px;
 }
 .special-offers__chocolate {
 	background-color: #462b1f;
-	background-image: url("../img/chocolateBackground.jpg");
+	background-image: url("../img/chocolate-background.jpg");
 	background-repeat: no-repeat;
 	border-radius: 15px;
 }
@@ -744,7 +744,7 @@ textarea::placeholder {
 	padding: 20px;
 	padding-bottom: 24px;
 	background-color: #eee2c7;
-	background-image: url("../img/waferBackground.jpg");
+	background-image: url("../img/wafer-background.jpg");
 	border-radius: 15px;
 	color: #323232;
 }
@@ -794,7 +794,7 @@ textarea::placeholder {
 }
 
 .features-list__ice-cream::before {
-	background-image: url("../img/iceCream.svg");
+	background-image: url("../img/ice-cream.svg");
 }
 .features-list__cow::before {
 	background-image: url("../img/cow.svg");
@@ -822,7 +822,7 @@ textarea::placeholder {
 	padding-right: 240px;
 	color: #323232;
 	background-color: white;
-	background-image: url("../img/strawberryBackground.jpg");
+	background-image: url("../img/strawberry-background.jpg");
 	background-repeat: no-repeat;
 }
 .new-in-the-blog h2 {
@@ -847,7 +847,7 @@ textarea::placeholder {
 	line-height: 22px;
 	color: #5a5a5a;
 	background-color: #f8f7f4;
-	background-image: url("../img/mailingBorder.png");
+	background-image: url("../img/mailing-border.png");
 	padding: 5px;
 }
 .mailing__inner {
@@ -1113,7 +1113,7 @@ textarea::placeholder {
 	border: none;
 	border-radius: 20px;
 	background-color: rgba(255, 255, 255, 0.2);
-	background-image: url("../img/arrowDownWhite.svg");
+	background-image: url("../img/arrow-down-white.svg");
 	background-position: 92% 50%;
 	background-repeat: no-repeat;
 	color: white;
@@ -1124,7 +1124,7 @@ textarea::placeholder {
 }
 .filter select:hover,
 .filter select:focus {
-	background-image: url("../img/arrowDownBlack.svg");
+	background-image: url("../img/arrow-down-black.svg");
 	color: #323232;
 }
 .filter option {
@@ -1369,11 +1369,11 @@ textarea::placeholder {
 	background-repeat: no-repeat;
 }
 .pagination__arrow_left {
-	background-image: url("../img/arrowLeft.png");
+	background-image: url("../img/arrow-left.png");
 	margin-right: 10px;
 }
 .pagination__arrow_right {
-	background-image: url("../img/arrowRight.png");
+	background-image: url("../img/arrow-right.png");
 	margin-left: 15px;
 }
 .pagination__arrow_disabled {
