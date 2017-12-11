@@ -23,6 +23,10 @@ a:focus {
 	border-color: rgba(255, 188, 158, 0.2);
 }
 
+button {
+	font: inherit;
+}
+
 input {
 	height: 44px;
 }
@@ -110,6 +114,7 @@ textarea::placeholder {
 
 .red-btn {
 	display: inline-block;
+	vertical-align: baseline;
 	outline: none;
 	font-size: 18px;
 	font-weight: 700;
@@ -190,6 +195,7 @@ textarea::placeholder {
 
 .site-navigation-list__item>a {
 	display: inline-block;
+	vertical-align: baseline;
 	position: relative;
 	height: 32px;
 	line-height: 32px;
@@ -232,13 +238,15 @@ textarea::placeholder {
 
 .site-navigation-list__item:hover .sub-menu,
 .site-navigation-list__item>a:focus+.sub-menu {
-	display: table;
+	display: block;
 }
 
 .sub-menu {
 	display: none;
 	position: absolute;
-	top: 35px;
+	top: 36px;
+	left: -7px;
+	width: 143px;
 	list-style: none;
 	border-radius: 5px;
 	background-color: #fff;
@@ -256,6 +264,7 @@ textarea::placeholder {
 	color: #333;
 	display: block;
 	white-space: nowrap;
+	line-height: 33px;
 }
 
 .sub-menu__item:first-child a {
@@ -586,8 +595,9 @@ textarea::placeholder {
 	background-color: transparent;
 	border: none;
 	display: inline-block;
-	width: 11px;
-	height: 11px;
+	vertical-align: baseline;
+	width: 13px;
+	height: 13px;
 	padding: 0;
 	margin: 0;
 	-webkit-transform: rotate(45deg);
@@ -747,10 +757,10 @@ textarea::placeholder {
 
 .slider-control label {
 	display: inline-block;
+	vertical-align: top;
 	width: 17px;
 	height: 17px;
 	margin-right: 8px;
-	vertical-align: top;
 	background-color: transparent;
 	border: 2px solid #fff;
 	border-radius: 50%;
@@ -1599,7 +1609,7 @@ textarea::placeholder {
 }
 
 .checkfield:not(:last-child) {
-	margin-right: 20px;
+	margin-right: 22px;
 }
 
 .checkfield__indicator {
@@ -1670,12 +1680,12 @@ textarea::placeholder {
 	line-height: 16px;
 	color: #323232;
 	border-radius: 5px;
-	padding: 20px 15px;
+	padding: 18px 14px 20px 14px;
 	z-index: 30;
 	position: absolute;
 	display: none;
 	right: 0px;
-	top: 48px;
+	top: 46px;
 	-webkit-box-sizing: border-box;
 	box-sizing: border-box;
 	width: 540px;
@@ -1685,7 +1695,7 @@ textarea::placeholder {
 
 .cart table {
 	border-spacing: 0px;
-	padding-bottom: 15px;
+	padding-bottom: 4px;
 	border-bottom: 1px solid #cacac7;
 }
 
@@ -1695,10 +1705,32 @@ textarea::placeholder {
 
 .cart td {
 	padding-right: 15px;
+	padding-bottom: 16px;
+}
+
+.cart td:nth-child(1) {
+	padding-right: 14px;
+}
+
+.cart td:nth-child(2) {
+	padding-right: 12px;
+}
+
+.cart td:nth-child(4) {
+	width: 108px;
 }
 
 .cart td:not(:nth-child(3)) {
 	white-space: nowrap;
+}
+
+.cart td:last-child {
+	padding-right: 17px;
+}
+
+.cart td.mockup-fix {
+	position: relative;
+	top: 8px;
 }
 
 .cart p {
@@ -1708,10 +1740,14 @@ textarea::placeholder {
 }
 
 .cart .cart__sum {
-	margin: 15px 0;
+	margin: 14px 0;
 	font-size: 15px;
 	font-weight: 700;
 	line-height: 18px;
+}
+
+.cart .red-btn {
+	padding: 10px 14px;
 }
 
 .pagination {
